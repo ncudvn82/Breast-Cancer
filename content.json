@@ -1,0 +1,25 @@
+{
+    "color1": "",
+    "color2": "",
+    "color3": "",
+    "color4": "",
+    "color5": "",
+    "siteTitle": "Breast Cancer",
+    "hero": {
+        "title": "ejfsldjflksjdf",
+        "backgroundImage": "./images/imageKV.jpg"
+    },
+    "introduction": {
+        "content": "sdfsfsdffsfs df fdsfdf",
+        "image": "./images/imageKV.jpg"
+    },
+    "documents": {
+        "title": "Documents",
+        "items": []
+    },
+    "ad": {
+        "image": "./images/SELENIUM.jpg",
+        "content": "",
+        "link": "https://claude.ai/new"
+    }
+}
