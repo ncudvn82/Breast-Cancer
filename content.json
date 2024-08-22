@@ -15,18 +15,7 @@
     },
     "documents": {
         "title": "Documents",
-        "items": [
-            {
-                "titles": "dfsfsdfs",
-                "author": "Cancerfree",
-                "no": 269,
-                "date": "2024/08/22",
-                "tags": [
-                    "文章",
-                    "INJECTION"
-                ]
-            }
-        ]
+        "items": []
     },
     "ad": {
         "image": "./images/SELENIUM.jpg",
