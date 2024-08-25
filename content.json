@@ -6,32 +6,20 @@
     "color5": "",
     "siteTitle": "Breast Cancer",
     "hero": {
-        "title": "ejfsldjflksjdf",
-        "backgroundImage": "./images/imageKV.jpg"
+        "title": "乳癌知識通",
+        "backgroundImage": ""
     },
     "introduction": {
-        "content": "sdfsfsdffsfs df fdsfdf",
-        "image": "./images/imageKV.jpg"
+        "content": "這是一個關於乳癌的網站。",
+        "image": ""
     },
     "documents": {
         "title": "Documents",
-        "items": [
-            {
-                "titles": "dfsfsdfs",
-                "author": "Cancerfree",
-                "no": 269,
-                "date": "2024/08/22",
-                "tags": [
-                    "文章",
-                    "藥品",
-                    "INJECTION"
-                ]
-            }
-        ]
+        "items": []
     },
     "ad": {
-        "image": "./images/SELENIUM.jpg",
+        "image": "./images/99.jpg",
         "content": "",
-        "link": "https://claude.ai/new"
+        "link": "https://www.cancerfree.io/zh-tw/index"
     }
 }
