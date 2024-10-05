@@ -1138,13 +1138,13 @@
         ]
     },
     "ad1": {
-        "image": "./images/99.jpg",
-        "content": "",
-        "link": "https://www.cancerfree.io/zh-tw/index"
+        "image": "./images/工作區域 1.jpg",
+        "content": "Little Star",
+        "link": "https://littlestar.love/"
     },
     "ad2": {
-        "image": "./images/IT-CF-廣告示意圖_正方形-240918-2-010.png",
-        "link": "https://www.cancerfree.io/zh-tw/index"
+        "image": "./images/工作區域 2.jpg",
+        "link": "https://www.cancerfree.io/"
     },
     "ad3": {
         "image": "./images/癌症論壇主視覺1200x100-1.png",
