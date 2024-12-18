@@ -389,7 +389,7 @@ document.addEventListener('click', (event) =>{
         event.preventDefault();
         console.log('detect_click\n');
         console.log(anchor.href);
-        fetch('/track_url', {
+        fetch('http://localhost:5001/track_url', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -406,7 +406,7 @@ document.addEventListener('click', (event) =>{
             console.error('Fetch error:', error)
         })
         .finally(() => {
-            window.open(anchor.href, _blank); // Navigate after tracking
+            window.open(anchor.href, '_blank'); // Navigate after tracking
         });
     }
 });
