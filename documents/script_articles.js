@@ -385,6 +385,8 @@ window.addEventListener('resize', adjustSidebarHeight);
 
 document.addEventListener('click', (event) =>{ 
     if(event.target.tagName === 'A'){
+        console.log('detect_click\n')
+        console.log(event.target.href)
         fetch('/track_url', {
             method: 'POST',
             headers: {
