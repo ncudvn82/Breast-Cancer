@@ -288,11 +288,6 @@ function filterByTagAndRedirect(tag) {
     window.location.href = `${indexPath}?tag=${encodeURIComponent(tag)}`;
 }
 
-function filterByDateAndRedirect(date) {
-    const indexPath = '../index.html';
-    window.location.href = `${indexPath}?date=${encodeURIComponent(date)}`;
-}
-
 function populateSidebar() {
     const dateArchive = document.getElementById('dateArchive');
     const tagList = document.getElementById('tagList');
@@ -308,7 +303,7 @@ function populateSidebar() {
     dates.forEach(date => {
         const li = document.createElement('li');
         li.textContent = date;
-        li.addEventListener('click', () => filterByDateAndRedirect(date));
+        li.addEventListener('click', () => filterArticles('date', date));
         dateArchive.appendChild(li);
     });
 
@@ -387,3 +382,15 @@ function adjustSidebarHeight() {
 
 window.addEventListener('load', adjustSidebarHeight);
 window.addEventListener('resize', adjustSidebarHeight);
+
+document.addEventListener('click', (event) =>{ 
+    if(event.target.tagName === 'A'){
+        fetch('/track_url', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({url: event.target.href})
+        });
+    }
+});
