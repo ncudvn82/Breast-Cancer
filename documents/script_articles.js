@@ -384,15 +384,29 @@ window.addEventListener('load', adjustSidebarHeight);
 window.addEventListener('resize', adjustSidebarHeight);
 
 document.addEventListener('click', (event) =>{ 
-    if(event.target.tagName === 'A'){
-        console.log('detect_click\n')
-        console.log(event.target.href)
+    const anchor = event.target.closest('a')
+    if (anchor){
+        event.preventDefault();
+        console.log('detect_click\n');
+        console.log(anchor.href);
         fetch('/track_url', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({url: event.target.href})
+            body: JSON.stringify({ url: anchor.href })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .catch(error => {
+            console.error('Fetch error:', error)
+        })
+        .finally(() => {
+            window.location.href = anchor.href; // Navigate after tracking
         });
     }
 });
