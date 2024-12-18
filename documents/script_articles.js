@@ -406,7 +406,7 @@ document.addEventListener('click', (event) =>{
             console.error('Fetch error:', error)
         })
         .finally(() => {
-            window.location.href = anchor.href; // Navigate after tracking
+            window.open(anchor.href, _blank); // Navigate after tracking
         });
     }
 });
