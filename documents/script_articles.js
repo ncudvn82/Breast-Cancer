@@ -389,7 +389,7 @@ document.addEventListener('click', (event) =>{
         event.preventDefault();
         console.log('detect_click\n');
         console.log(anchor.href);
-        fetch('http://localhost:5001/track_url', {
+        fetch('http://10.140.0.2/track_url', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
